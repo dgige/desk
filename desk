@@ -291,7 +291,7 @@ get_running_shell() {
     fi
 
     if [ ! -z "$CMDLINE_SHELL" ]; then
-        basename "$CMDLINE_SHELL"
+        basename $(echo "$CMDLINE_SHELL")
         exit
     fi
 
